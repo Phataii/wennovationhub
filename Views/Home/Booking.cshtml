@@ -1,0 +1,134 @@
+@{
+    ViewData["Title"] = "Bookings";
+}
+<div class="booking-container">
+  <!-- User Details Section -->
+  <div class="user-details-section">
+    <h2><i class="fas fa-user-circle"></i> Your <span class="text-gradient">Information</span></h2>
+    <form id="userDetailsForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fullName"><i class="fas fa-user"></i> Full Name</label>
+          <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+          <label for="email"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="company"><i class="fas fa-building"></i> Company (Optional)</label>
+          <input type="text" id="company" name="company">
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Booking Form Section -->
+  <div class="booking-form-section">
+    <h2><i class="fas fa-calendar-alt"></i> Booking <span class="text-gradient">Details</span></h2>
+    <form id="bookingForm">
+      <!-- Location Dropdown -->
+      <div class="form-group fancy-select">
+        <label for="location"><i class="fas fa-map-marker-alt"></i> Location</label>
+        <select id="location" name="location" required>
+          <option value="">Select a location</option>
+          <option value="lagos">Lagos - Victoria Island Hub</option>
+          <option value="abuja">Abuja - Karmo Business Lounge</option>
+        </select>
+        <div class="select-arrow"><i class="fas fa-chevron-down"></i></div>
+      </div>
+
+      <!-- Dynamic Space Type -->
+      <div class="form-group fancy-select">
+        <label for="spaceType"><i class="fas fa-couch"></i> Space Type</label>
+        <select id="spaceType" name="spaceType" required disabled>
+          <option value="">Select location first</option>
+        </select>
+        <div class="select-arrow"><i class="fas fa-chevron-down"></i></div>
+      </div>
+
+      <!-- Pricing Display -->
+      <div class="price-display">
+        <div class="price-tag">
+          <span class="price-label">Estimated Cost:</span>
+          <span class="price-amount">₦0</span>
+          <span class="price-duration">/day</span>
+        </div>
+        <div class="price-note">Prices shown are for 9AM-5PM access</div>
+      </div>
+
+      <!-- Date/Time Selection -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="bookingDate"><i class="far fa-calendar"></i> Date</label>
+          <input type="date" id="bookingDate" name="bookingDate" required>
+        </div>
+        <div class="form-group">
+          <label for="duration"><i class="far fa-clock"></i> Duration</label>
+          <select id="duration" name="duration" required>
+            <option value="1">1 Day</option>
+            <option value="2">2 Days</option>
+            <option value="7">1 Week</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Additional Fields -->
+      <div class="form-group">
+        <label for="purpose"><i class="fas fa-bullseye"></i> Purpose</label>
+        <select id="purpose" name="purpose" required>
+          <option value="">Select purpose</option>
+          <option value="work">Individual Work</option>
+          <option value="meeting">Team Meeting</option>
+          <option value="training">Training Session</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="attendees"><i class="fas fa-users"></i> Number of People</label>
+        <input type="number" id="attendees" name="attendees" min="1" value="1" required>
+      </div>
+
+      <!-- Dos and Don'ts Section -->
+      <div class="rules-section">
+        <h2><i class="fas fa-clipboard-check"></i> Space <span class="text-gradient">Guidelines</span></h2>
+        
+        <div class="rules-columns">
+          <div class="dos">
+            <h4><i class="fas fa-check-circle"></i> Do's</h4>
+            <ul>
+              <li>Provide accurate booking information</li>
+              <li>Book at least 24 hours in advance</li>
+              <li>Specify equipment needs clearly</li>
+              <li>Respect your allocated time slot</li>
+            </ul>
+          </div>
+          
+          <div class="donts">
+            <h4><i class="fas fa-times-circle"></i> Don'ts</h4>
+            <ul>
+              <li>Don't exceed your booked time</li>
+              <li>Don't bring unauthorized guests</li>
+              <li>Don't leave valuables unattended</li>
+              <li>Don't damage equipment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-footer">
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-paper-plane"></i> Submit Booking Request
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
