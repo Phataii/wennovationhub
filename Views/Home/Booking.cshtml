@@ -2,14 +2,15 @@
     ViewData["Title"] = "Bookings";
 }
 <div class="booking-container">
-  <!-- User Details Section -->
-  <div class="user-details-section">
-    <h2><i class="fas fa-user-circle"></i> Your <span class="text-gradient">Information</span></h2>
-    <form id="userDetailsForm">
+  <!-- Combined Form Section -->
+  <form id="bookingForm" method="post" action="/home/booking">
+    <!-- User Details Section -->
+    <div class="user-details-section">
+      <h2><i class="fas fa-user-circle"></i> Your <span class="text-gradient">Information</span></h2>
       <div class="form-row">
         <div class="form-group">
-          <label for="fullName"><i class="fas fa-user"></i> Full Name</label>
-          <input type="text" id="fullName" name="fullName" required>
+          <label for="name"><i class="fas fa-user"></i> Full Name</label>
+          <input type="text" id="name" name="name" required>
         </div>
         <div class="form-group">
           <label for="email"><i class="fas fa-envelope"></i> Email</label>
@@ -27,31 +28,36 @@
           <input type="text" id="company" name="company">
         </div>
       </div>
-    </form>
-  </div>
+    </div>
 
-  <!-- Booking Form Section -->
-  <div class="booking-form-section">
-    <h2><i class="fas fa-calendar-alt"></i> Booking <span class="text-gradient">Details</span></h2>
-    <form id="bookingForm">
+    <!-- Booking Details Section -->
+    <div class="booking-form-section">
+      <h2><i class="fas fa-calendar-alt"></i> Booking <span class="text-gradient">Details</span></h2>
+      
       <!-- Location Dropdown -->
       <div class="form-group fancy-select">
         <label for="location"><i class="fas fa-map-marker-alt"></i> Location</label>
         <select id="location" name="location" required>
           <option value="">Select a location</option>
-          <option value="lagos">Lagos - Victoria Island Hub</option>
-          <option value="abuja">Abuja - Karmo Business Lounge</option>
+          <option value="Lagos">Lagos - Victoria Island Hub</option>
+          <option value="Abuja">Abuja - Karmo Business Lounge</option>
         </select>
-        <div class="select-arrow"><i class="fas fa-chevron-down"></i></div>
+        @* <div class="select-arrow"><i class="fas fa-chevron-down"></i></div> *@
       </div>
 
       <!-- Dynamic Space Type -->
       <div class="form-group fancy-select">
         <label for="spaceType"><i class="fas fa-couch"></i> Space Type</label>
-        <select id="spaceType" name="spaceType" required disabled>
-          <option value="">Select location first</option>
+        <select id="spaceType" name="spaceType" required>
+          <option value="">Select Type </option>
+          <option value="Single Desk">Single Desk</option>
+        <option value="Private Office">Private Office</option>
+        <option value="Training Space">Training Space</option>
+        <option value="Hot desk">Hot desk</option>
+        <option value="Joint desk">Joint desk</option>
         </select>
-        <div class="select-arrow"><i class="fas fa-chevron-down"></i></div>
+        
+        @* <div class="select-arrow"><i class="fas fa-chevron-down"></i></div> *@
       </div>
 
       <!-- Pricing Display -->
@@ -67,8 +73,8 @@
       <!-- Date/Time Selection -->
       <div class="form-row">
         <div class="form-group">
-          <label for="bookingDate"><i class="far fa-calendar"></i> Date</label>
-          <input type="date" id="bookingDate" name="bookingDate" required>
+          <label for="date"><i class="far fa-calendar"></i> Date</label>
+          <input type="date" id="date" name="date" required>
         </div>
         <div class="form-group">
           <label for="duration"><i class="far fa-clock"></i> Duration</label>
@@ -92,8 +98,8 @@
       </div>
 
       <div class="form-group">
-        <label for="attendees"><i class="fas fa-users"></i> Number of People</label>
-        <input type="number" id="attendees" name="attendees" min="1" value="1" required>
+        <label for="noOfPeople"><i class="fas fa-users"></i> Number of People</label>
+        <input type="number" id="noOfPeople" name="noOfPeople" required>
       </div>
 
       <!-- Dos and Don'ts Section -->
@@ -129,6 +135,6 @@
           <i class="fas fa-paper-plane"></i> Submit Booking Request
         </button>
       </div>
-    </form>
-  </div>
+    </div>
+  </form>
 </div>

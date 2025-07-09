@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
+     <link rel="icon" href="~/images/logo.png" type="image/x-icon">
 </head>
 <body>
  <!-- Bootstrap Responsive Navbar -->
@@ -37,11 +37,11 @@
             Services
           </a>
           <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-            <li><a class="dropdown-item" href="#">Co-working and Training</a></li>
+            <li><a class="dropdown-item" href="services">Co-working and Training</a></li>
             <li><a class="dropdown-item" href="#">Startups/SMEs Business Services</a></li>
             <li><a class="dropdown-item" href="#">Private and Public Sector Innovation</a></li>
             <li><a class="dropdown-item" href="#">Partnerships</a></li><hr/>
-            <li><a class="dropdown-item" href="#">Become a wennovator</a></li>
+            <li><a class="dropdown-item" href="/become-a-wennovator">Become a wennovator</a></li>
             <!-- Add more items as needed -->
           </ul>
         </li>
@@ -50,14 +50,14 @@
           <a class="nav-link text-dark fw-semibold" href="/impact">Impact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark fw-semibold" href="/our-work">Our Work</a>
+          <a class="nav-link text-dark fw-semibold" href="/our-works">Our Work</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark fw-semibold" href="/contact">Contact</a>
         </li>
       </ul>
 
-      <a href="#" class="custom-outline btn btn-md mt-3 mt-lg-0 ms-lg-3">Get Started</a>
+      <a href="/become-a-wennovator" class="custom-outline btn btn-md mt-3 mt-lg-0 ms-lg-3">Get Started</a>
     </div>
   </div>
 </nav>
@@ -69,108 +69,107 @@
         </main>
     </div>
 
-  <!-- Footer Section -->
-  <footer class="footer-section bg-dark text-white pt-6 pb-4">
-    <div class="container">
-      <div class="row g-5 mt-3">
-        <!-- Company Info -->
-        <div class="col-lg-4">
-          <div class="footer-brand mb-4">
-            <img src="~/images/logo.png" alt="Logo" style="width: 60px;" class=" me-2" />
-            @* <h2 class="text-white mb-3">Wennovation<span class="text-success">Hub</span></h2> *@
-            <p class="text-white">Empowering the next generation of innovators through collaboration and cutting-edge technology.</p>
-          </div>
-          <div class="social-links mb-4">
-            <h5 class="text-white mb-3">Connect With Us</h5>
-            <div class="d-flex gap-3">
-              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+   <!-- Footer -->
+    <footer class="footer-section bg-dark text-white pt-6 pb-4">
+        <div class="container">
+            <div class="row g-5 mt-3">
+                <!-- Company Info -->
+                <div class="col-lg-4">
+                    <div class="footer-brand mb-4">
+                        <img src="images/footer-logo.png" alt="Logo" style="width: 60px;" class="me-2" />
+                        <p class="text-white">Empowering the next generation of innovators through collaboration and cutting-edge technology.</p>
+                    </div>
+                    <div class="social-links mb-4">
+                        <h5 class="text-white mb-3">Connect With Us</h5>
+                        <div class="d-flex gap-3">
+                            <a href="https://x.com/wennovation?s=11" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/wennovationhub/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/wennovationhub?mibextid=kFxxJD" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/wennovation.hub?igsh=YjUyZDU3ZDFjeTBi" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h5 class="text-white mb-3">Stay Updated</h5>
+                        <form class="d-flex">
+                            <input type="email" class="form-control rounded-0" placeholder="Your email">
+                            <button class="btn btn-success rounded-0" style="max-height: fit-content;" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="impact">Impact</a></li>
+                        <li><a href="our-works">Our Works</a></li>
+                        <li><a href="meet-our-team">Our Team</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-4">Services</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#">Co-working and Training</a></li>
+                        <li><a href="#">Startups/SMEs Business Services</a></li>
+                        <li><a href="#">Private and Public Sector Innovation</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-white mb-4">Contact Us</h5>
+                    <ul class="contact-info list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt text-success me-2"></i>
+                            <span>2a Loius Solomon Close, Victoria Island Lagos.</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone-alt text-success me-2"></i>
+                            <span>+234 912 797 2803</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope text-success me-2"></i>
+                            <span>Support@wennovationhub.org</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-clock text-success me-2"></i>
+                            <span>Mon-Fri: 9AM - 6PM</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="newsletter">
-            <h5 class="text-white mb-3">Stay Updated</h5>
-            <form class="d-flex">
-              <input type="email" class="form-control rounded-0" placeholder="Your email">
-              <button class="btn btn-success rounded-0" type="submit">
-                <i class="fas fa-paper-plane"></i>
-              </button>
-            </form>
-          </div>
+
+            <hr class="my-5 border-secondary">
+
+            <!-- Copyright & Legal -->
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="legal-links mb-0">&copy; 2025 WennovationHub. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="legal-links list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+                        <li class="list-inline-item"><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <!-- Quick Links -->
-        <div class="col-lg-2 col-md-4">
-          <h5 class="text-white mb-4">Quick Links</h5>
-          <ul class="footer-links list-unstyled">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Case Studies</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Services -->
-        <div class="col-lg-2 col-md-4">
-          <h5 class="text-white mb-4">Services</h5>
-          <ul class="footer-links list-unstyled">
-            <li><a class="dropdown-item" href="#">Co-working and Training</a></li>
-            <li><a class="dropdown-item" href="#">Startups/SMEs Business Services</a></li>
-            <li><a class="dropdown-item" href="#">Private and Public Sector Innovation</a></li>
-            <li><a class="dropdown-item" href="#">Partnerships</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="col-lg-4 col-md-4">
-          <h5 class="text-white mb-4">Contact Us</h5>
-          <ul class="contact-info list-unstyled">
-            <li class="mb-3">
-              <i class="fas fa-map-marker-alt text-success me-2"></i>
-              <span>2a Loius Solomon Close, Victoria Island Lagos.</span>
-            </li>
-            <li class="mb-3">
-              <i class="fas fa-phone-alt text-success me-2"></i>
-              <span>+234 912 797 2803</span>
-            </li>
-            <li class="mb-3">
-              <i class="fas fa-envelope text-success me-2"></i>
-              <span>Support@wennovationhub.org</span>
-            </li>
-            <li class="mb-3">
-              <i class="fas fa-clock text-success me-2"></i>
-              <span>Mon-Fri: 9AM - 6PM</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <hr class="my-5 border-secondary">
-
-      <!-- Copyright & Legal -->
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-          <p class="legal-links mb-0">&copy; 2025 WennovationHub. All rights reserved.</p>
-        </div>
-        <div class="col-md-6 text-center text-md-end">
-          <ul class="legal-links list-inline mb-0">
-            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            <li class="list-inline-item"><a href="#">Terms of Service</a></li>
-            <li class="list-inline-item"><a href="#">Cookie Policy</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="btn btn-warning rounded-circle back-to-top">
-      <i class="fas fa-arrow-up"></i>
-    </button>
-  </footer>
+        <!-- Back to Top Button -->
+        <button id="backToTop" class="btn btn-warning rounded-circle back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
      <script src="~/js/script.js"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

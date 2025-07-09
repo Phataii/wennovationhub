@@ -237,8 +237,23 @@ namespace wennovation_hub.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    b.Property<string>("Amount")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("BookingId")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Company")
+                        .HasColumnType("longtext");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime?>("Date")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Duration")
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Email")
                         .HasColumnType("longtext");
@@ -246,7 +261,22 @@ namespace wennovation_hub.Migrations
                     b.Property<string>("Gender")
                         .HasColumnType("longtext");
 
+                    b.Property<string>("Location")
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Name")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("NoOfPeople")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Purpose")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("SpaceType")
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
@@ -278,6 +308,83 @@ namespace wennovation_hub.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Locations");
+                });
+
+            modelBuilder.Entity("wennovation_hub.Models.Wennovator", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("AdditionalInfo")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("AnnualRevenue")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("ApplicationId")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("BusinessDescription")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("BusinessName")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Documents")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Founders")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("FundingHistory")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("FundingNeeds")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Headquarters")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Industry")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("InvestmentChallenges")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("ProfitMargin")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Profitability")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("RegistrationNumber")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("RevenueModel")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("SubmissionDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("TeamSize")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Trainings")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("ValueProposition")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("YearsOperation")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Wennovators");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

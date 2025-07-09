@@ -13,4 +13,5 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<Bookings> Bookings { get; set; }
     public DbSet<Locations> Locations { get; set; }
     public DbSet<Admins> Admins { get; set; }
+    public DbSet<Wennovator> Wennovators { get; set; }
 }

@@ -1,37 +1,79 @@
+using System.Text;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using wennovation_hub.Data;
+// using content_hub.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
+DotNetEnv.Env.Load();
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-
+// -------------------- Database Configuration --------------------
+var connectionString = configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseMySql(
-        builder.Configuration.GetConnectionString("DefaultConnection"),
-        new MySqlServerVersion(new Version(8, 0, 36)) // use your actual MySQL version
-    )
-);
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+// -------------------- Session Configuration --------------------
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(15);
+    options.Cookie.IsEssential = true;
+});
+
+// -------------------- Authentication & Authorization --------------------
+builder.Services.AddAuthentication("Cookies")
+    .AddCookie("Cookies", options =>
+    {
+        options.LoginPath = "/login";         // Path to login page
+        options.LogoutPath = "/api/auth/logout";       // Path to logout endpoint
+        options.ExpireTimeSpan = TimeSpan.FromHours(1);
+        options.SlidingExpiration = true;
+    });
+
+builder.Services.AddAuthorization();
+
+// -------------------- Dependency Injection --------------------
+builder.Services.AddScoped<UserHelper>();
+
+// -------------------- MVC & HTTP --------------------
+builder.Services.AddControllersWithViews();
+builder.Services.AddSession(); // Keep this
+builder.Services.AddRazorPages();
+builder.Services.AddHttpClient();
+
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+// -------------------- Middleware --------------------
+if (app.Environment.IsDevelopment())
+{
+    app.UseMigrationsEndPoint();
+}
+else
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.UseSession();          // Session must come before routing if needed in controller
 app.UseRouting();
 
+app.UseAuthentication();   // Authentication before authorization
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapRazorPages();
 
 app.Run();

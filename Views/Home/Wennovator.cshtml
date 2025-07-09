@@ -1,0 +1,238 @@
+@model WennovatorApplicationVM
+@{
+    ViewData["Title"] = "Become a Wennovator";
+}
+
+<div class="wennovator-container mt-5">
+    <div class="header-section">
+        <h1 class="text-gradient mt-5">Become a <span class="highlight">Wennovator</span></h1>
+        <h2>Scale with Wennovation Hub</h2>
+        <div class="intro-box">
+            <p>Welcome to Wennovation Hub, Nigeria's pioneer innovation accelerator. Whether you're building a solution in agriculture, healthcare, technology, clean energy, or education — we are here to help you scale and succeed.</p>
+            <p>This form helps us understand your business better so we can match you with the most suitable support, from incubation and acceleration, to investment readiness, advisory, and other tailored services.</p>
+            <p class="time-estimate"><i class="fas fa-clock"></i> It will take approximately 20 minutes to complete. Please provide accurate and detailed responses to help us assess how best we can support your growth journey.</p>
+        </div>
+    </div>
+
+    <form class="wennovator-form"  method="post" action="/home/wennovator">
+        <!-- Section 1: Business Information -->
+        <div class="form-section">
+            <div class="section-header"  style="display: flex;">
+                <div class="section-number">1</div>
+                <h3>Tell Us About Your Business</h3>
+            </div>
+
+            <div class="form-group">
+                <label for="businessName">Business Name</label>
+                <p class="subtext">What is the legal name of your business?</p>
+                <input type="text" id="businessName" name="businessName" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="industry">Industry/Sector</label>
+                    <p class="subtext">In which sector does your business operate?</p>
+                    <select id="industry" name="industry" required>
+                        <option value="">Select sector</option>
+                        <option value="technology">Technology</option>
+                        <option value="agriculture">Agriculture</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="education">Education</option>
+                        <option value="clean-energy">Clean Energy</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="registrationNumber">CAC/SMEDAN Registration Number</label>
+                    <p class="subtext">Have you registered your business?</p>
+                    <input type="text" id="registrationNumber" name="registrationNumber" placeholder="Enter CAC or SMEDAN number">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="yearsOperation">Years of Operation</label>
+                    <p class="subtext">How many years has your business been operational?</p>
+                    <select id="yearsOperation" name="yearsOperation" required>
+                        <option value="">Select years</option>
+                        <option value="0-1">0-1 years</option>
+                        <option value="1-3">1-3 years</option>
+                        <option value="3-5">3-5 years</option>
+                        <option value="5+">5+ years</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="teamSize">Team Size</label>
+                    <p class="subtext">How many people are on your team?</p>
+                    <input type="number" id="teamSize" name="teamSize" min="1" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="founders">Founders/Leadership Team</label>
+                <p class="subtext">List the names and roles of the founders or core leadership team</p>
+                <textarea id="founders" name="founders" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="businessDescription">Business Description</label>
+                <p class="subtext">Briefly describe your business, including your core product or service</p>
+                <textarea id="businessDescription" name="businessDescription" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="valueProposition">Unique Value Proposition</label>
+                <p class="subtext">What sets your business apart from the competition?</p>
+                <textarea id="valueProposition" name="valueProposition" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="headquarters">Headquarters Location</label>
+                <p class="subtext">Where is your business based (City/Town)?</p>
+                <input type="text" id="headquarters" name="headquarters" required>
+            </div>
+        </div>
+
+        <!-- Section 2: Financial Information -->
+        <div class="form-section">
+            <div class="section-header"  style="display: flex;">
+                <div class="section-number">2</div>
+                <h3>Financial Information</h3>
+            </div>
+
+            <div class="form-group">
+                <label for="revenueModel">Revenue Model</label>
+                <p class="subtext">How does your business generate income?</p>
+                <textarea id="revenueModel" name="revenueModel" rows="2" required></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="annualRevenue">Annual Revenue (2024)</label>
+                    <p class="subtext">What was your revenue in 2024?</p>
+                    <input type="text" id="annualRevenue" name="annualRevenue" placeholder="Enter amount or 'N/A'">
+                </div>
+                <div class="form-group">
+                    <label>Profitability</label>
+                    <p class="subtext">Is your business currently profitable?</p>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="profitability" value="yes" required>
+                            <div class="radio-input-group">
+                                <span>Yes</span>
+                                <input type="text" class="inline-input" name="profitMargin" placeholder="Net profit margin" disabled>
+                            </div>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="profitability" value="no">
+                            <span>No</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="fundingHistory">Funding History</label>
+                <p class="subtext">Have you raised any funding so far?</p>
+                <textarea id="fundingHistory" name="fundingHistory" rows="3" placeholder="Amount, source, and date (if applicable)"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="fundingNeeds">Funding Needs</label>
+                <p class="subtext">Are you currently seeking funding?</p>
+                <input type="text" id="fundingNeeds" name="fundingNeeds" placeholder="Enter amount or 'Not seeking'">
+            </div>
+        </div>
+
+        <!-- Section 3: Support Needs -->
+        <div class="form-section">
+            <div class="section-header" style="display: flex;">
+                <div class="section-number">3</div>
+                <h3>Support Requirements</h3>
+            </div>
+
+            <div class="form-group">
+                <label>Investment Readiness Documents</label>
+                <p class="subtext">Which documents do you have prepared?</p>
+                <div class="checkbox-group">
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="documents" value="businessPlan">
+                        <span>Business Plan</span>
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="documents" value="financialProjections">
+                        <span>Financial Projections</span>
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="documents" value="pitchDeck">
+                        <span>Pitch Deck</span>
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="documents" value="valuationReport">
+                        <span>Valuation Report</span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="investmentChallenges">Top 3 Challenges in Attracting Investment</label>
+                <textarea id="investmentChallenges" name="investmentChallenges" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Which of our trainings does your business require?</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="trainings" value="coworking">
+                        <span>1. Co-working space and Trainings</span>
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="trainings" value="businessServices">
+                        <span>2. Startups/SMEs Business Services</span>
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="trainings" value="innovation">
+                        <span>3. Private and Public Sector Innovation</span>
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="trainings" value="partnerships">
+                        <span>4. Partnerships</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="additionalInfo">Additional Information</label>
+                <p class="subtext">Is there anything else we should know about your business?</p>
+                <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+            </div>
+        </div>
+
+        <div class="form-footer">
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Submit Application
+            </button>
+            <p class="privacy-notice">By submitting this form, you agree to our <a href="#">Privacy Policy</a> and consent to being contacted by Wennovation Hub.</p>
+        </div>
+    </form>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Enable profit margin input when "Yes" is selected
+        const profitabilityRadios = document.querySelectorAll('input[name="profitability"]');
+        const profitMarginInput = document.querySelector('input[name="profitMargin"]');
+        
+        profitabilityRadios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                if (this.value === 'yes') {
+                    profitMarginInput.disabled = false;
+                    profitMarginInput.required = true;
+                } else {
+                    profitMarginInput.disabled = true;
+                    profitMarginInput.required = false;
+                    profitMarginInput.value = '';
+                }
+            });
+        });
+    });
+</script>

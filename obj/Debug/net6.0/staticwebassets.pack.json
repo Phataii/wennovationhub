@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets/images/bg1.jpeg"
     },
     {
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/footer-logo.png",
+      "PackagePath": "staticwebassets/images/footer-logo.png"
+    },
+    {
       "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/gallery1.jpg",
       "PackagePath": "staticwebassets/images/gallery1.jpg"
     },
