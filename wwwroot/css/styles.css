@@ -2077,7 +2077,7 @@ input:focus, select:focus {
         }
         
         .consult-header {
-            background-color: var(--secondary);
+            background-color: var(--primary-color);
             color: white;
             padding: 2rem;
             text-align: center;

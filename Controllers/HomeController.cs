@@ -135,7 +135,7 @@ public class HomeController : Controller
     // }
 
     [HttpPost]
-    [Route("wennovator")]
+    [Route("home/wennovator")]
     public async Task<IActionResult> Wennovator(WennovatorApplicationVM model)
     {
         try
@@ -267,6 +267,35 @@ public class HomeController : Controller
         return Redirect("/dashboard");
     }
 
+     [HttpPost]
+    [Route("home/consult")]
+    public async Task<IActionResult> Consult(Consult consult)
+    {
+        try
+        {
+            var consultData = new Consult
+            {
+                ConsultId = consult.ConsultId,
+                Name = consult.Name,
+                Email = consult.Email,
+                Phone = consult.Phone,
+                Organization = consult.Organization,
+                Service = consult.Service,
+                Message = consult.Message
+            };
+
+            _context.Consults.Add(consultData);
+            await _context.SaveChangesAsync();
+            return Redirect("/success");
+        }
+        catch (Exception ex)
+        {
+            // Log error
+            // _logger.LogError(ex, "Error submitting Wennovator application");
+
+            return StatusCode(500, new { success = false, message = "An error occurred while processing your application." });
+        }
+    }
     [HttpGet]
     [Route("logout")]
     public async Task<IActionResult> Logout()
