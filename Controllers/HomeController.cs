@@ -73,6 +73,12 @@ public class HomeController : Controller
         return View();
     }
 
+    [Route("consult-with-us")]
+    public IActionResult Consult()
+    {
+        return View();
+    }
+
     public IActionResult Privacy()
     {
         return View();
@@ -129,7 +135,7 @@ public class HomeController : Controller
     // }
 
     [HttpPost]
-    [Route("home/Wennovator")]
+    [Route("wennovator")]
     public async Task<IActionResult> Wennovator(WennovatorApplicationVM model)
     {
         try

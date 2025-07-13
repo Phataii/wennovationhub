@@ -1,0 +1,132 @@
+@{
+     ViewData["Title"] = "Consult with us";
+}
+    <!-- Hero Section -->
+    <section class="consult-hero">
+        <div class="container position-relative" style="z-index: 1;">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Let's Build Something Great Together!</h1>
+                    <p class="lead mb-4">Unlock your potential with Wennovation Hub. We offer a comprehensive suite of services designed for every stage of growth. Tell us about your vision, and we'll help you bring it to life.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Collaboration" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Form -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="consult-card">
+                        <div class="consult-header">
+                            <h2>Tell Us About Your Vision</h2>
+                            <p>Whether you're a budding entrepreneur, an SME in need of expert business advisory, or an organization seeking innovative solutions, we're here to help.</p>
+                        </div>
+                        <div class="consult-body">
+                            <form id="consultationForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="fullName" class="form-label">Your Full Name</label>
+                                            <input type="text" class="form-control" id="fullName" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Your Email Address</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="phone" class="form-label">Phone Number (Optional)</label>
+                                            <input type="tel" class="form-control" id="phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="organization" class="form-label">Organization/Business/Startup</label>
+                                            <input type="text" class="form-control" id="organization">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label for="service" class="form-label">What service are you interested in?</label>
+                                            <select class="form-select" id="service" required>
+                                                <option value="" selected disabled>Select a service</option>
+                                                <option value="incubation">Incubation Program</option>
+                                                <option value="acceleration">Acceleration Program</option>
+                                                <option value="coworking">Co-working Space</option>
+                                                <option value="training">Training & Capacity Building</option>
+                                                <option value="advisory">Business Advisory</option>
+                                                <option value="funding">Funding & Investment</option>
+                                                <option value="partnership">Strategic Partnership</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-4">
+                                            <label for="message" class="form-label">Tell us more about what you need:</label>
+                                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="submit-btn">
+                                            <i class="fas fa-paper-plane me-2"></i> Send Your Vision
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Success Stories</h2>
+                <p class="lead">See how we've helped others turn their visions into reality</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Success Story">
+                        <div class="card-body">
+                            <h5 class="card-title">AgriTech Startup</h5>
+                            <p class="card-text">From concept to commercial success, our incubation program helped this agricultural technology startup secure funding and scale across Africa.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Success Story">
+                        <div class="card-body">
+                            <h5 class="card-title">EdTech Platform</h5>
+                            <p class="card-text">Through our acceleration program, this education technology platform expanded to 3 new countries within 12 months.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Success Story">
+                        <div class="card-body">
+                            <h5 class="card-title">SME Growth</h5>
+                            <p class="card-text">Our business advisory services helped this manufacturing SME optimize operations and increase revenue by 300%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

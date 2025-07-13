@@ -222,7 +222,7 @@ body{
 }
 
 .logo-card:hover .logo-overlay {
-  opacity: 4;
+  opacity: 1;
 }
 
 .overlay-content h5 {
@@ -237,12 +237,12 @@ body{
 
 .grayscale {
   filter: grayscale(100%);
-  opacity: 0.7;
+  opacity: 0.2;
 }
 
 .logo-card:hover .grayscale {
   filter: grayscale(0%);
-  opacity: 1;
+  opacity: 0.2;
 }
 
 /* Text Gradient */
@@ -752,7 +752,7 @@ body{
         padding: 40px;
     }
 
-    .form-control {
+    /* .form-control {
         height: 38px;
         border-radius: 8px;
         border: 1px solid #e0e0e0;
@@ -764,7 +764,7 @@ body{
     .form-control:focus {
         border-color: var(--primary-color);
         box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
-    }
+    } */
 
     textarea.form-control {
         height: 150px;
@@ -1904,7 +1904,7 @@ input:focus, select:focus {
             border-radius: 50%;
             border: 5px solid white;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            margin: -75px auto 1.5rem;
+            margin: 45px auto 1rem;
             position: relative;
             z-index: 1;
             background-color: white;
@@ -2031,4 +2031,64 @@ input:focus, select:focus {
 
 
 
+        /* CONSULT WITH US */
+        .consult-hero {
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary-light) 100%);
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
         
+        .consult-hero::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background-color: var(--primary-light);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
+        .consult-hero::after {
+            content: "";
+            position: absolute;
+            bottom: -100px;
+            left: -100px;
+            width: 300px;
+            height: 300px;
+            background-color: var(--secondary-light);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+          .consult-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: var(--transition);
+        }
+        
+        .consult-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .consult-header {
+            background-color: var(--secondary);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .consult-header h2 {
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .consult-body {
+            background-color: white;
+            padding: 2.5rem;
+        }

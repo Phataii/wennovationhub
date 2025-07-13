@@ -53,12 +53,16 @@
       "PackagePath": "staticwebassets/images/partners/.DS_Store"
     },
     {
-      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/partners/Lagos Angel Network - Edited.png",
-      "PackagePath": "staticwebassets/images/partners/Lagos Angel Network - Edited.png"
-    },
-    {
       "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/partners/partner1.png",
       "PackagePath": "staticwebassets/images/partners/partner1.png"
+    },
+    {
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/partners/partner10.png",
+      "PackagePath": "staticwebassets/images/partners/partner10.png"
+    },
+    {
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/partners/partner11.png",
+      "PackagePath": "staticwebassets/images/partners/partner11.png"
     },
     {
       "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/partners/partner2.png",
@@ -77,16 +81,48 @@
       "PackagePath": "staticwebassets/images/partners/partner5.png"
     },
     {
-      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/partners/partner6.png",
-      "PackagePath": "staticwebassets/images/partners/partner6.png"
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/partners/partner6.jpg",
+      "PackagePath": "staticwebassets/images/partners/partner6.jpg"
     },
     {
       "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/partners/partner7.png",
       "PackagePath": "staticwebassets/images/partners/partner7.png"
     },
     {
-      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/partners/partner8.png",
-      "PackagePath": "staticwebassets/images/partners/partner8.png"
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/partners/partner8.gif",
+      "PackagePath": "staticwebassets/images/partners/partner8.gif"
+    },
+    {
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/partners/partner9.png",
+      "PackagePath": "staticwebassets/images/partners/partner9.png"
+    },
+    {
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/Mercy.png",
+      "PackagePath": "staticwebassets/images/team/Mercy.png"
+    },
+    {
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/Michael.png",
+      "PackagePath": "staticwebassets/images/team/Michael.png"
+    },
+    {
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/Mustapha.png",
+      "PackagePath": "staticwebassets/images/team/Mustapha.png"
+    },
+    {
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/Olatokunbo.png",
+      "PackagePath": "staticwebassets/images/team/Olatokunbo.png"
+    },
+    {
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/Oluwaseun.png",
+      "PackagePath": "staticwebassets/images/team/Oluwaseun.png"
+    },
+    {
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/Princess.png",
+      "PackagePath": "staticwebassets/images/team/Princess.png"
+    },
+    {
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/Zainab.png",
+      "PackagePath": "staticwebassets/images/team/Zainab.png"
     },
     {
       "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/video.mp4",
