@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LsO3pd/+jUI+IXriIzSy98VTI1eWBy432RHRdTXP6aQ=",
+  "Hash": "koVkSKM72tYnD+W/F9bzz7xioa073ASfYtwdqTL/XA8=",
   "Source": "wennovation-hub",
   "BasePath": "_content/wennovation-hub",
   "Mode": "Default",
@@ -1479,12 +1479,12 @@
       "OriginalItemSpec": "wwwroot/images/partners/partner9.png"
     },
     {
-      "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/Mercy.png",
+      "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/mercy.png",
       "SourceId": "wennovation-hub",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/home/Documents/archive/wennovation-hub/wwwroot/",
       "BasePath": "_content/wennovation-hub",
-      "RelativePath": "images/team/Mercy.png",
+      "RelativePath": "images/team/mercy.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1493,15 +1493,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/team/Mercy.png"
+      "OriginalItemSpec": "wwwroot/images/team/mercy.png"
     },
     {
-      "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/Michael.png",
+      "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/michael.png",
       "SourceId": "wennovation-hub",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/home/Documents/archive/wennovation-hub/wwwroot/",
       "BasePath": "_content/wennovation-hub",
-      "RelativePath": "images/team/Michael.png",
+      "RelativePath": "images/team/michael.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1510,15 +1510,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/team/Michael.png"
+      "OriginalItemSpec": "wwwroot/images/team/michael.png"
     },
     {
-      "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/Mustapha.png",
+      "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/mustapha.png",
       "SourceId": "wennovation-hub",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/home/Documents/archive/wennovation-hub/wwwroot/",
       "BasePath": "_content/wennovation-hub",
-      "RelativePath": "images/team/Mustapha.png",
+      "RelativePath": "images/team/mustapha.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1527,15 +1527,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/team/Mustapha.png"
+      "OriginalItemSpec": "wwwroot/images/team/mustapha.png"
     },
     {
-      "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/Olatokunbo.png",
+      "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/olatokunbo.png",
       "SourceId": "wennovation-hub",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/home/Documents/archive/wennovation-hub/wwwroot/",
       "BasePath": "_content/wennovation-hub",
-      "RelativePath": "images/team/Olatokunbo.png",
+      "RelativePath": "images/team/olatokunbo.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1544,15 +1544,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/team/Olatokunbo.png"
+      "OriginalItemSpec": "wwwroot/images/team/olatokunbo.png"
     },
     {
-      "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/Oluwaseun.png",
+      "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/oluwaseun.png",
       "SourceId": "wennovation-hub",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/home/Documents/archive/wennovation-hub/wwwroot/",
       "BasePath": "_content/wennovation-hub",
-      "RelativePath": "images/team/Oluwaseun.png",
+      "RelativePath": "images/team/oluwaseun.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1561,15 +1561,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/team/Oluwaseun.png"
+      "OriginalItemSpec": "wwwroot/images/team/oluwaseun.png"
     },
     {
-      "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/Princess.png",
+      "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/princess.png",
       "SourceId": "wennovation-hub",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/home/Documents/archive/wennovation-hub/wwwroot/",
       "BasePath": "_content/wennovation-hub",
-      "RelativePath": "images/team/Princess.png",
+      "RelativePath": "images/team/princess.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1578,15 +1578,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/team/Princess.png"
+      "OriginalItemSpec": "wwwroot/images/team/princess.png"
     },
     {
-      "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/Zainab.png",
+      "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/zainab.png",
       "SourceId": "wennovation-hub",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/home/Documents/archive/wennovation-hub/wwwroot/",
       "BasePath": "_content/wennovation-hub",
-      "RelativePath": "images/team/Zainab.png",
+      "RelativePath": "images/team/zainab.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1595,7 +1595,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/team/Zainab.png"
+      "OriginalItemSpec": "wwwroot/images/team/zainab.png"
     },
     {
       "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/video.mp4",

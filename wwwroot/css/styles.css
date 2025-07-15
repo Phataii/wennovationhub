@@ -2025,7 +2025,7 @@ input:focus, select:focus {
             .team-card .team-img {
                 width: 120px;
                 height: 120px;
-                margin: -60px auto 1rem;
+                margin: 60px auto 1rem;
             }
         }
 
