@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cKFkhmaUe6jT7KwpCaZ/INnwcXHm6hKFj6R2AhXpEMA=",
+  "Hash": "pngHoHpgd+P6wh+TJwRI85AaocxxQ2fZnuFYGYT4ddU=",
   "Source": "wennovation-hub",
   "BasePath": "_content/wennovation-hub",
   "Mode": "Default",
@@ -1137,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/.DS_Store"
+    },
+    {
+      "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/banner.jpg",
+      "SourceId": "wennovation-hub",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/home/Documents/archive/wennovation-hub/wwwroot/",
+      "BasePath": "_content/wennovation-hub",
+      "RelativePath": "images/banner.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/banner.jpg"
     },
     {
       "Identity": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/bg1.jpeg",

@@ -49,7 +49,62 @@ body{
     z-index: 1;
     position: relative;
 }
-
+   /* Banner Modal Styles */
+    .banner-modal {
+        position: fixed;
+        top: 6;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 14px;
+        background-color: rgba(0,0,0,0.0);
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 0.3s ease;
+    }
+    
+    .modal-content {
+        position: relative;
+        max-width: 90%;
+        max-height: 90vh;
+    }
+    
+    .banner-image {
+        max-width: 100%;
+        max-height: 90vh;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    
+    .close-banner-btn {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        width: 40px;
+        height: 40px;
+        background: #f79f4a;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+    
+    .close-banner-btn:hover {
+        background: #e68a3a;
+        transform: scale(1.1);
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
 /* Who We Are Section */
 .who-we-are-section {
     position: relative;

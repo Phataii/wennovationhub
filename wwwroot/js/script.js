@@ -1,6 +1,29 @@
 ﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
-
+ document.addEventListener('DOMContentLoaded', function() {
+        const bannerModal = document.getElementById('image-banner-modal');
+        const closeBtn = document.getElementById('close-banner');
+        
+        // Show modal on page load
+        bannerModal.style.display = 'flex';
+        
+        // Close functionality
+        closeBtn.addEventListener('click', function() {
+            bannerModal.style.display = 'none';
+        });
+        
+        // Optional: Close when clicking outside image
+        bannerModal.addEventListener('click', function(e) {
+            if (e.target === bannerModal) {
+                bannerModal.style.display = 'none';
+            }
+        });
+        
+        // Optional: Auto-close after 5 seconds
+        setTimeout(function() {
+            bannerModal.style.display = 'none';
+        }, 5000);
+    });
 // Write your JavaScript code.
 document.addEventListener('DOMContentLoaded', function() {
     // Counter animation

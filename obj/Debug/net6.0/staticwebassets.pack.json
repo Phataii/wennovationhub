@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets/images/.DS_Store"
     },
     {
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/banner.jpg",
+      "PackagePath": "staticwebassets/images/banner.jpg"
+    },
+    {
       "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/bg1.jpeg",
       "PackagePath": "staticwebassets/images/bg1.jpeg"
     },

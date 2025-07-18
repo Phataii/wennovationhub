@@ -3,21 +3,30 @@
 }
 
     <!-- Fullscreen Video Banner -->
-    <header class="video-header">
-        <video autoplay muted loop playsinline class="video-bg">
-            <source src="~/images/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-        </video>
-        <div class="overlay"></div>
-        <div class="content container h-100 d-flex justify-content-center align-items-center text-center">
-            <div class="text-white">
-                <h3 class="display-4 fw-bold">An African Frontier Enterprise<br/> Support Organization — Enabling Sustainable Ventures</h3>
-                <p class="lead">Grow businesses. Create jobs. Drive prosperity.</p>
-                <a href="/consult-with-us" class="btn btn-lg mt-3 text-white" style="background-color: #f79f4a;">Consult with us</a>
-                <a href="/bookings" class="btn btn-lg custom-outline mt-3">Book a Space</a>
-            </div>
+   <header class="video-header">
+    <video autoplay muted loop playsinline class="video-bg">
+        <source src="~/images/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+    
+    <!-- Image Banner Modal -->
+    <div id="image-banner-modal" class="banner-modal">
+        <div class="modal-content">
+            <img src="~/images/banner.jpg" alt="Special Offer" class="banner-image">
+            <button id="close-banner" class="close-banner-btn">&times;</button>
         </div>
-    </header>
+    </div>
+    
+    <div class="content container h-100 d-flex justify-content-center align-items-center text-center">
+        <div class="text-white">
+            <h3 class="display-4 fw-bold">An African Frontier Enterprise<br/> Support Organization — Enabling Sustainable Ventures</h3>
+            <p class="lead">Grow businesses. Create jobs. Drive prosperity.</p>
+            <a href="/consult-with-us" class="btn btn-lg mt-3 text-white" style="background-color: #f79f4a;">Consult with us</a>
+            <a href="/bookings" class="btn btn-lg custom-outline mt-3">Book a Space</a>
+        </div>
+    </div>
+</header>
 
     <!-- Who We Are Section -->
     <section id="who-we-are" class="py-5 bg-light position-relative overflow-hidden">
