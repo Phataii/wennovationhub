@@ -281,7 +281,7 @@ public class HomeController : Controller
         {
             var consultData = new Consult
             {
-                ConsultId = consult.ConsultId,
+                ConsultId = GenerateConsultId(),
                 Name = consult.Name,
                 Email = consult.Email,
                 Phone = consult.Phone,
