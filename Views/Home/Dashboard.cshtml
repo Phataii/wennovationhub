@@ -349,8 +349,8 @@
             <h2>Admin Dashboard</h2>
             <div class="dropdown user-dropdown">
                 <a class="btn dropdown-toggle d-flex align-items-center" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown">
-                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="User">
-                    <span>Princess Audu</span>
+                    <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" alt="User">
+                    <span>@ViewBag.admin</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
                     <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i> Profile</a></li>
@@ -380,8 +380,8 @@
             <div class="col-md-6 col-lg-3">
                 <div class="stats-card approved">
                     <i class="fas fa-check-circle"></i>
-                    <div class="count">56</div>
-                    <div class="label">Approved Wennovators</div>
+                    <div class="count">@ViewBag.consultCount</div>
+                    <div class="label">Consult Requests</div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
@@ -390,6 +390,59 @@
                     <div class="count">33</div>
                     <div class="label">Pending Reviews</div>
                 </div>
+            </div>
+        </div>
+
+         <!-- Wennovator Applications Table -->
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5>Wennovator Applications</h5>
+                <div>
+                    <button class="btn btn-primary-custom btn-sm">
+                        <i class="fas fa-download me-1"></i> Export
+                    </button>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            @* <th>Application ID</th> *@
+                            <th>Business Name</th>
+                            <th>Email</th>
+                            <th>Date Applied</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var wennovator in Model.Wennovators)
+                        {
+                        <tr>
+                            <td>@wennovator.ApplicationId</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    @* <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="User" class="rounded-circle me-2" width="30" height="30"> *@
+                                    @wennovator.BusinessName
+                                </div>
+                            </td>
+                            <td>@wennovator.Email</td>
+                            <td>@wennovator.SubmissionDate</td>
+                            <td><span class="badge badge-success">Approved</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-custom">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-custom">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        }
+                            
+                    </tbody>
+                </table>
             </div>
         </div>
 
@@ -447,59 +500,7 @@
             </div>
         </div>
 
-        <!-- Wennovator Applications Table -->
-        <div class="card">
-            <div class="card-header d-flex justify-content-between align-items-center">
-                <h5>Wennovator Applications</h5>
-                <div>
-                    <button class="btn btn-primary-custom btn-sm">
-                        <i class="fas fa-download me-1"></i> Export
-                    </button>
-                </div>
-            </div>
-            <div class="table-responsive">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Applicant</th>
-                            <th>Email</th>
-                            <th>Date Applied</th>
-                            <th>Status</th>
-                            <th>Skills</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var booking in Model.Wennovators)
-                        {
-                        <tr>
-                            <td>#WN-1001</td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="User" class="rounded-circle me-2" width="30" height="30">
-                                    Amina Yusuf
-                                </div>
-                            </td>
-                            <td>amina@example.com</td>
-                            <td>10 Jun 2023</td>
-                            <td><span class="badge badge-success">Approved</span></td>
-                            <td>UI/UX, Product Design</td>
-                            <td>
-                                <button class="btn btn-sm btn-outline-custom">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                                <button class="btn btn-sm btn-outline-custom">
-                                    <i class="fas fa-edit"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        }
-                            
-                    </tbody>
-                </table>
-            </div>
-        </div>
+       
     </div>
 
     <!-- Scripts -->

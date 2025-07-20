@@ -41,5 +41,6 @@ namespace wennovation_hub.Models
     {
         public List<Bookings> Bookings { get; set; }
         public List<Wennovator> Wennovators { get; set; }
+        public List<Consult> Consults { get; set; }
     }
 }

@@ -14,14 +14,14 @@
                     <div class="location-card">
                         <iframe 
                             class="location-map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.048274166954!2d-122.419906724014!3d37.7749294718605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11370.552908232763!2d3.4091375834910242!3d6.4259475734763605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8adad3aaf90b%3A0x95aa014c9ce56868!2s2a%20Louis%20Solomon%20Cl%2C%20Victoria%20Island%2C%20Lagos%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1752996112105!5m2!1sen!2sng">
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                         <div class="location-info">
                             <h3>Lagos</h3>
-                            <p><i class="fas fa-map-marker-alt"></i> 2a Loius Solomon Close, Victoria Island, Lagos.</p>
+                            <p><i class="fas fa-map-marker-alt"></i> 2a Louis Solomon Close, Victoria Island, Lagos.</p>
                             <p><i class="fas fa-phone-alt"></i> +234 912 797 2803</p>
                             <p><i class="fas fa-envelope"></i> support@wennovationhub.org</p>
                         </div>
@@ -33,7 +33,7 @@
                     <div class="location-card">
                         <iframe 
                             class="location-map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6803806237166!2d-0.127758323574712!3d51.5072178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c38c8cd1d9%3A0xb78f2474b9a45aa9!2sLondon%2C%20UK!5e0!3m2!1sen!2suk!4v1690000000000!5m2!1sen!2suk"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.1013622052483!2d7.386683899999998!3d9.0545184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e745b8075e9a9%3A0x4adaff4118a15dec!2sThe%20Epicentre%20Lifestyle%20By%20CoBuildit!5e0!3m2!1sen!2sng!4v1752996218063!5m2!1sen!2sng"
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
@@ -50,13 +50,13 @@
                 <!-- Location 3: Tokyo -->
                 <div class="col-lg-4 col-md-6">
                     <div class="location-card">
-                        <iframe 
+                       <iframe 
                             class="location-map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207446.248098499!2d139.60078095!3d35.6681625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b857628235d%3A0xcdd8aef709a2b520!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sjp!4v1690000000000!5m2!1sen!2sjp"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7913.158850992764!2d3.8843421935790983!3d7.4009305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d41f2ac6d77%3A0x1ef0f6404a16a243!2sWennovation%20Hub!5e0!3m2!1sen!2sng!4v1752996418522!5m2!1sen!2sng"
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                       </iframe>
                         <div class="location-info">
                             <h3>Ibadan</h3>
                             <p><i class="fas fa-map-marker-alt"></i>3rd floor, Alpha & Omega Building, Queen Elizabeth Road II, Mokola Ibadan</p>
@@ -71,21 +71,36 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <div class="contact-form">
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" class="form-control" placeholder="Your Email" required>
-                                </div>
+                       <form id="contactForm">
+                        <div class="row mb-2">
+                            <div class="col-md-6">
+                                <input type="text" id="name" class="form-control" placeholder="Your Name" required>
                             </div>
-                            <input type="text" class="form-control" placeholder="Subject">
-                            <textarea class="form-control" placeholder="Your Message" required></textarea>
-                            <button type="submit" class="submit-btn">
-                                <i class="fas fa-paper-plane me-2"></i> Send Message
-                            </button>
-                        </form>
+                            <div class="col-md-6">
+                                <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <input type="text" id="subject" class="form-control mb-2" placeholder="Subject">
+                        <textarea id="message" class="form-control mb-2" placeholder="Your Message" required></textarea>
+                        <button type="button" onclick="sendMail()" class="submit-btn">
+                            <i class="fas fa-paper-plane me-2"></i> Send Message
+                        </button>
+                    </form>
+
+                    <script>
+                    function sendMail() {
+                        const name = document.getElementById("name").value;
+                        const email = document.getElementById("email").value;
+                        const subject = document.getElementById("subject").value;
+                        const message = document.getElementById("message").value;
+
+                        const mailtoLink = `mailto:support@wennovationhub.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+                            `Name: ${name}\nEmail: ${email}\n\nMessage: ${message}`
+                        )}`;
+
+                        window.location.href = mailtoLink;
+                    }
+                    </script>
                     </div>
                 </div>
             </div>

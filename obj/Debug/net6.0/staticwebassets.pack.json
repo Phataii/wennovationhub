@@ -109,36 +109,40 @@
       "PackagePath": "staticwebassets/images/partners/partner9.png"
     },
     {
-      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/mercy.png",
-      "PackagePath": "staticwebassets/images/team/mercy.png"
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/mercy.jpg",
+      "PackagePath": "staticwebassets/images/team/mercy.jpg"
     },
     {
-      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/michael.png",
-      "PackagePath": "staticwebassets/images/team/michael.png"
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/michael.jpg",
+      "PackagePath": "staticwebassets/images/team/michael.jpg"
     },
     {
-      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/mustapha.png",
-      "PackagePath": "staticwebassets/images/team/mustapha.png"
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/mustapha.jpg",
+      "PackagePath": "staticwebassets/images/team/mustapha.jpg"
     },
     {
-      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/olatokunbo.png",
-      "PackagePath": "staticwebassets/images/team/olatokunbo.png"
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/olatokunbo.jpg",
+      "PackagePath": "staticwebassets/images/team/olatokunbo.jpg"
     },
     {
-      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/oluwaseun.png",
-      "PackagePath": "staticwebassets/images/team/oluwaseun.png"
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/oluwaseun.jpg",
+      "PackagePath": "staticwebassets/images/team/oluwaseun.jpg"
     },
     {
-      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/princess.png",
-      "PackagePath": "staticwebassets/images/team/princess.png"
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/princess.jpg",
+      "PackagePath": "staticwebassets/images/team/princess.jpg"
     },
     {
-      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/zainab.png",
-      "PackagePath": "staticwebassets/images/team/zainab.png"
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/team/zainab.jpg",
+      "PackagePath": "staticwebassets/images/team/zainab.jpg"
     },
     {
       "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/video.mp4",
       "PackagePath": "staticwebassets/images/video.mp4"
+    },
+    {
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/works/.DS_Store",
+      "PackagePath": "staticwebassets/images/works/.DS_Store"
     },
     {
       "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/works/10.jpg",
@@ -173,8 +177,8 @@
       "PackagePath": "staticwebassets/images/works/5.jpg"
     },
     {
-      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/works/6.png",
-      "PackagePath": "staticwebassets/images/works/6.png"
+      "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/works/6.jpg",
+      "PackagePath": "staticwebassets/images/works/6.jpg"
     },
     {
       "Id": "/Users/home/Documents/archive/wennovation-hub/wwwroot/images/works/7.png",

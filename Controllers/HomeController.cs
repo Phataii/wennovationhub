@@ -104,19 +104,22 @@ public class HomeController : Controller
         {
             return Redirect("/login");
         }
-
+        ViewData["admin"] = loggedInUser.Name;
         var bookings = await _context.Bookings.ToListAsync();
         var wennovators = await _context.Wennovators.ToListAsync();
+        var consult = await _context.Consults.ToListAsync();
 
         var adminVM = new AdminDash
         {
             Bookings = bookings,
             Wennovators = wennovators,
+            Consults = consult,
         };
 
         ViewData["bookingsCount"] = bookings.Count();
         ViewData["wennovatorsCount"] = wennovators.Count();
-        
+        ViewData["consultCount"] = consult.Count();
+
         return View(adminVM);
     }
 
@@ -143,6 +146,7 @@ public class HomeController : Controller
             // Map ViewModel to Domain Model (using AutoMapper or manually)
             var application = new Wennovator
             {
+                ApplicationId = GenerateWennovatorId(),
                 BusinessName = model.BusinessName,
                 Industry = model.Industry,
                 RegistrationNumber = model.RegistrationNumber,
@@ -162,7 +166,8 @@ public class HomeController : Controller
                 InvestmentChallenges = model.InvestmentChallenges,
                 Trainings = model.Trainings != null ? string.Join(",", model.Trainings) : null,
                 AdditionalInfo = model.AdditionalInfo,
-                SubmissionDate = DateTime.UtcNow
+                SubmissionDate = DateTime.UtcNow,
+                // Status = "pending",
             };
 
             // TODO: Save to database
@@ -202,7 +207,8 @@ public class HomeController : Controller
                 Duration = model.Duration,
                 Purpose = model.Purpose,
                 NoOfPeople = model.NoOfPeople,
-                CreatedAt = DateTime.Now
+                CreatedAt = DateTime.Now,
+                // Status = "pending",
             };
 
             _context.Bookings.Add(booking);
@@ -281,7 +287,8 @@ public class HomeController : Controller
                 Phone = consult.Phone,
                 Organization = consult.Organization,
                 Service = consult.Service,
-                Message = consult.Message
+                Message = consult.Message,
+                //  Status = "pending",
             };
 
             _context.Consults.Add(consultData);
@@ -317,6 +324,22 @@ public class HomeController : Controller
         var randomPart = Guid.NewGuid().ToString("N").Substring(0, 6).ToUpper(); // 6 random alphanumerics
         var timestamp = DateTime.UtcNow.ToString("yyMMddHHmm"); // e.g. 2407061032 for 6th July 2024, 10:32 AM UTC
         return $"BK-{randomPart}-{timestamp}";
+    }
+
+    private string GenerateWennovatorId()
+    {
+        // Example: BK-7GHTKX-2407061032 (random + YYMMDDHHmm)
+        var randomPart = Guid.NewGuid().ToString("N").Substring(0, 6).ToUpper(); // 6 random alphanumerics
+        var timestamp = DateTime.UtcNow.ToString("yyMMddHHmm"); // e.g. 2407061032 for 6th July 2024, 10:32 AM UTC
+        return $"WT-{randomPart}-{timestamp}";
+    }
+
+    private string GenerateConsultId()
+    {
+        // Example: BK-7GHTKX-2407061032 (random + YYMMDDHHmm)
+        var randomPart = Guid.NewGuid().ToString("N").Substring(0, 6).ToUpper(); // 6 random alphanumerics
+        var timestamp = DateTime.UtcNow.ToString("yyMMddHHmm"); // e.g. 2407061032 for 6th July 2024, 10:32 AM UTC
+        return $"CT-{randomPart}-{timestamp}";
     }
 
 }
