@@ -36,11 +36,19 @@ namespace wennovation_hub.Models
         Yes,
         No
     }
-    
+
     public class AdminDash
     {
         public List<Bookings> Bookings { get; set; }
         public List<Wennovator> Wennovators { get; set; }
         public List<Consult> Consults { get; set; }
+    }
+    
+    public class BookingSummaryViewModel
+    {
+        public Bookings Booking { get; set; }
+        public string PaymentInstructions { get; set; }
+        public DateTime PaymentDueDate { get; set; }
+        // Add any other view-specific properties
     }
 }

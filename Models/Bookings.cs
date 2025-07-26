@@ -14,11 +14,11 @@ namespace wennovation_hub.Models
 
         public string? Location { get; set; }
         public string? SpaceType { get; set; }
-        public string? Amount { get; set; }
+        public double? Amount { get; set; }
         public DateTime? Date { get; set; }
-        public string? Duration { get; set; }
+        public int Duration { get; set; }
         public string? Purpose { get; set; }
-        public string? NoOfPeople { get; set; }
+        public int NoOfPeople { get; set; }
         public DateTime CreatedAt { get; set; }
     }
 }

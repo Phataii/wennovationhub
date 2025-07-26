@@ -152,17 +152,23 @@
                 <div class="login-header">
                     <img src="~/images/logo.png" alt="Wennovation Hub Logo">
                     <h2>Admin Portal</h2>
-                    <p>Access your administration dashboard</p>
-                    @ViewBag.error
+                    <p>Create an admin profile</p>
                 </div>
                 <div class="login-body">
                     <!-- Error message placeholder (visible only when there's an error) -->
-                    @* <div class="alert alert-danger d-none" id="">
+                    <div class="alert alert-danger d-none" id="loginError">
                         <i class="fas fa-exclamation-circle me-2"></i>
-                        <span id="">Invalid email or password. Please try again.</span>
-                    </div> *@
+                        <span id="errorMessage">Invalid email or password. Please try again.</span>
+                    </div>
                     
-                    <form id="loginForms" method="post" action="/home/login">
+                    <form id="loginForms" method="post" action="/home/signup">
+                        <div class="mb-4 position-relative">
+                            <span class="input-group-text">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <input type="text" class="form-control ps-5" id="name" name="name" placeholder="Full name" required>
+                        </div>
+                        
                         <div class="mb-4 position-relative">
                             <span class="input-group-text">
                                 <i class="fas fa-envelope"></i>
@@ -180,20 +186,12 @@
                             </span>
                         </div>
                         
-                        <div class="d-flex justify-content-between align-items-center mb-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="rememberMe">
-                                <label class="form-check-label" for="rememberMe">Remember me</label>
-                            </div>
-                            <a href="#" class="forgot-password">Forgot password?</a>
-                        </div>
-                        
                         <button type="submit" class="btn btn-login mb-3">
-                            <i class="fas fa-sign-in-alt me-2"></i> Login
+                            <i class="fas fa-sign-in-alt me-2"></i> Create Admin
                         </button>
                         
                         <div class="text-center mt-3">
-                            <p class="small text-muted">For security reasons, please log out when you're done.</p>
+                            <p class="small text-muted">Go back to <a href="/dashboard">Dashboard</a></p>
                         </div>
                     </form>
                 </div>

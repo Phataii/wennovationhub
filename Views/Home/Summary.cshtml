@@ -1,0 +1,319 @@
+@model BookingSummaryViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation | Wennovation Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #f79f4a;
+            --primary-light: rgba(247, 159, 74, 0.1);
+            --secondary: #368032;
+            --secondary-light: rgba(54, 128, 50, 0.1);
+            --light: #f8f9fa;
+            --dark: #2a2d34;
+            --gray: #6c757d;
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: var(--dark);
+        }
+        
+        .confirmation-container {
+            max-width: 800px;
+            margin: 3rem auto;
+        }
+        
+        .confirmation-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .confirmation-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .confirmation-header h2 {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .confirmation-body {
+            background-color: white;
+            padding: 2.5rem;
+        }
+        
+        .booking-summary {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .summary-item:last-child {
+            border-bottom: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .payment-details {
+            background-color: var(--primary-light);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 2rem;
+        }
+        
+        .payment-instructions {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+        
+        .instruction-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+        
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .btn-primary-custom {
+            background-color: var(--primary-color);
+            border: none;
+            color: white;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 50px;
+            transition: var(--transition);
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #e68e3f;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(247, 159, 74, 0.3);
+        }
+        
+        .bank-details {
+            margin-top: 1.5rem;
+        }
+        
+        .bank-details div {
+            margin-bottom: 0.5rem;
+        }
+        
+        .bank-details strong {
+            display: inline-block;
+            width: 150px;
+        }
+        
+        media (max-width: 768px) {
+            .confirmation-body {
+                padding: 1.5rem;
+            }
+            
+            .bank-details strong {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="confirmation-container">
+        <div class="confirmation-card">
+            <div class="confirmation-header">
+                <h2>Booking Confirmation</h2>
+                <p>Your space reservation is pending payment</p>
+            </div>
+            <div class="confirmation-body">
+                <div class="alert alert-success">
+                    <i class="fas fa-check-circle me-2"></i>
+                    Your booking request has been received! Please complete payment within 24 hours to secure your reservation.
+                </div>
+                
+                <h4 class="mb-4">Booking Summary</h4>
+                <div class="booking-summary">
+                    <div class="summary-item">
+                        <span>Booking Reference:</span>
+                        <span>@Model.Booking.BookingId</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Space Booked:</span>
+                        <span>@Model.Booking.SpaceType (@Model.Booking.Location) </span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Date:</span>
+                        <span>@Model.Booking.Date?.ToString("dddd, MMMM d, yyyy")</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Duration:</span>
+                        <span>@Model.Booking.Duration Hrs</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Rate:</span>
+                        <span>
+                            @($"₦{ViewBag.rate:0,0.00}")
+                        @* @(ViewBag.rate.HasValue 
+                            ? string.Format(new System.Globalization.CultureInfo("en-NG"), "{0:C}", ViewBag.rate.Value) 
+                            : "₦0.00") *@
+                    </span>
+                    </div>
+                    @* <div class="summary-item">
+                        <span>Subtotal:</span>
+                        <span>₦450,000</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>VAT (7.5%):</span>
+                        <span>₦33,750</span>
+                    </div> *@
+                    <div class="summary-item">
+                        <span>Total Amount Due:</span>
+                        <span>
+                        @(Model.Booking.Amount.HasValue 
+                            ? string.Format(new System.Globalization.CultureInfo("en-NG"), "{0:C}", Model.Booking.Amount.Value) 
+                            : "₦0.00")
+                    </span>
+
+                    </div>
+                </div>
+                
+                <h4 class="mb-4">Payment Instructions</h4>
+                <div class="payment-details">
+                    <h5><i class="fas fa-university me-2"></i> Bank Transfer Details</h5>
+                    <div class="bank-details">
+                        <div>
+                            <strong>Bank Name:</strong>
+                            <span>Fidelity Bank Plc</span>
+                        </div>
+                        <div>
+                            <strong>Account Name:</strong>
+                            <span>Wennovation Hub Initiative Ltd/Gte</span>
+                        </div>
+                        <div>
+                            <strong>Account Number:</strong>
+                            <span>4011109700</span>
+                        </div>
+                        @* <div>
+                            <strong>Sort Code:</strong>
+                            <span>058</span>
+                        </div> *@
+                        <div>
+                            <strong>Amount:</strong>
+                            <span> 
+                                @(Model.Booking.Amount.HasValue 
+                                ? string.Format(new System.Globalization.CultureInfo("en-NG"), "{0:C}", Model.Booking.Amount.Value) 
+                                : "₦0.00")
+                            </span>
+                        </div>
+                        <div>
+                            <strong>Reference:</strong>
+                            <span>@Model.Booking.BookingId</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="payment-instructions">
+                    <h5 class="mb-4"><i class="fas fa-info-circle me-2"></i> Next Steps</h5>
+                    
+                    <div class="instruction-step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h6>Make Payment</h6>
+                            <p>Transfer the total amount to the bank account details provided above. Please include your booking reference (@Model.Booking.BookingId) in the payment description.</p>
+                        </div>
+                    </div>
+                    
+                    @* <div class="instruction-step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h6>Upload Payment Receipt</h6>
+                            <p>After making payment, upload your transaction receipt using the button below or bring it with you on your first visit.</p>
+                            <button class="btn btn-primary-custom mt-2">
+                                <i class="fas fa-upload me-2"></i> Upload Receipt
+                            </button>
+                        </div>
+                    </div> *@
+                    
+                    <div class="instruction-step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h6>Visit Our Facility</h6>
+                            <p>Come to our @Model.Booking.Location hub at least 30 minutes before your booking time with:</p>
+                            <ul>
+                                <li>A printed or digital copy of your payment receipt</li>
+                                <li>A valid government-issued ID</li>
+                                <li>This booking confirmation (printed or on your phone)</li>
+                            </ul>
+                            @* <p class="mt-2"><strong>Address:</strong> 123 Innovation Drive, Yaba, Lagos</p> *@
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-info mt-4">
+                    <i class="fas fa-clock me-2"></i>
+                    Your space will be reserved for 24 hours pending payment. For any questions, contact <a href="mailto:support@wennovationhub.org">support@wennovationhub.org</a> or call +234 912 797 2803.
+                </div>
+                
+                <div class="d-flex justify-content-between mt-4">
+                    <button class="btn btn-outline-secondary">
+                        <i class="fas fa-print me-2"></i> Print This Page
+                    </button>
+                    @* <button class="btn btn-primary-custom">
+                        <i class="fas fa-envelope me-2"></i> Email Confirmation
+                    </button> *@
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // In a real application, you would have JavaScript to handle receipt uploads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Print button functionality
+            document.querySelector('.btn-outline-secondary').addEventListener('click', function() {
+                window.print();
+            });
+            
+            // Email confirmation button functionality
+            document.querySelector('.btn-primary-custom').addEventListener('click', function() {
+                alert('Booking confirmation has been sent to your email address.');
+            });
+        });
+    </script>
+</body>
+</html>

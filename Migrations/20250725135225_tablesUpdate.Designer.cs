@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using wennovation_hub.Data;
 
@@ -10,9 +11,10 @@ using wennovation_hub.Data;
 namespace wennovation_hub.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250725135225_tablesUpdate")]
+    partial class tablesUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -240,9 +242,6 @@ namespace wennovation_hub.Migrations
                     b.Property<string>("Location")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Per")
-                        .HasColumnType("longtext");
-
                     b.Property<double?>("Price")
                         .HasColumnType("double");
 
@@ -260,8 +259,8 @@ namespace wennovation_hub.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<double?>("Amount")
-                        .HasColumnType("double");
+                    b.Property<string>("Amount")
+                        .HasColumnType("longtext");
 
                     b.Property<string>("BookingId")
                         .HasColumnType("longtext");
@@ -275,8 +274,8 @@ namespace wennovation_hub.Migrations
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<int>("Duration")
-                        .HasColumnType("int");
+                    b.Property<string>("Duration")
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Email")
                         .HasColumnType("longtext");
@@ -290,8 +289,8 @@ namespace wennovation_hub.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("longtext");
 
-                    b.Property<int>("NoOfPeople")
-                        .HasColumnType("int");
+                    b.Property<string>("NoOfPeople")
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Phone")
                         .HasColumnType("longtext");

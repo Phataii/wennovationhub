@@ -62,9 +62,10 @@ public class HomeController : Controller
     }
 
     [Route("bookings")]
-    public IActionResult Booking()
+    public async Task <IActionResult> Booking()
     {
-        return View();
+        var spaces = await _context.BookingRates.ToListAsync();
+        return View(spaces);
     }
 
     [Route("become-a-wennovator")]
@@ -90,9 +91,48 @@ public class HomeController : Controller
         return View();
     }
 
+     [Route("admins")]
+    public async Task <IActionResult> Admins()
+    {
+        var loggedInUser = await _userHelper.GetLoggedInUser(Request);
+        if (loggedInUser == null)
+        {
+            return Redirect("/login");
+        }
+        ViewData["admin"] = loggedInUser.Name;
+        var admins = await _context.Admins.ToListAsync();
+        return View(admins);
+    }
+
+    [Route("summary/{id}")]
+    public async Task <IActionResult> Summary(string id)
+    {
+        var booking = await _context.Bookings.FirstOrDefaultAsync(x => x.BookingId == id);
+
+        var bookingVM = new BookingSummaryViewModel
+        {
+            Booking = booking,
+        };
+
+        var SpaceType = await _context.BookingRates.FirstOrDefaultAsync(x => x.Location == booking.Location && x.SpaceName == booking.SpaceType);
+        ViewData["rate"] = SpaceType.Price;
+        return View(bookingVM);
+    }
+
     [Route("login")]
     public IActionResult Login()
     {
+        return View();
+    }
+
+    [Route("hub")]
+    public async Task <IActionResult> Register()
+    {
+        var loggedInUser = await _userHelper.GetLoggedInUser(Request);
+        if (loggedInUser == null)
+        {
+            return Redirect("/login");
+        }
         return View();
     }
 
@@ -210,10 +250,25 @@ public class HomeController : Controller
                 CreatedAt = DateTime.Now,
                 // Status = "pending",
             };
-
+            var SpaceType = await _context.BookingRates.FirstOrDefaultAsync(x => x.Location == booking.Location && x.SpaceName == booking.SpaceType);
+            if (SpaceType.Per == "person")
+            {
+                var amount = SpaceType.Price * booking.NoOfPeople;
+                booking.Amount = amount;
+            }
+            else if (SpaceType.Per == "hour")
+            {
+                var amount = SpaceType.Price * booking.Duration;
+                booking.Amount = amount;
+            }
+            else if (SpaceType.Per == "day")
+            {
+                var amount = SpaceType.Price * booking.Duration;
+                booking.Amount = amount;
+            }
             _context.Bookings.Add(booking);
             await _context.SaveChangesAsync();
-            return Redirect("/success");
+           return Redirect($"/summary/{booking.BookingId}");
         }
         catch (Exception ex)
         {
@@ -272,6 +327,46 @@ public class HomeController : Controller
 
         return Redirect("/dashboard");
     }
+
+    [HttpPost()]
+    [Route("home/signup")]
+    public async Task<IActionResult> Signup([FromForm] string name, [FromForm] string email, [FromForm] string password)
+    {
+        if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+        {
+            TempData["error"] = "All fields are required.";
+            return Redirect("/hub");
+        }
+
+        // if (password != confirmPassword)
+        // {
+        //     TempData["error"] = "Passwords do not match.";
+        //     return Redirect("/hub");
+        // }
+
+        var existingUser = await _context.Admins.FirstOrDefaultAsync(u => u.Email == email);
+        if (existingUser != null)
+        {
+            TempData["error"] = "Email already exists.";
+            return Redirect("/hub");
+        }
+
+        var hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
+
+        var newUser = new Admins
+        {
+            Name = name,
+            Email = email,
+            Password = hashedPassword
+        };
+
+        _context.Admins.Add(newUser);
+        await _context.SaveChangesAsync();
+
+        TempData["success"] = "Signup successful. Please log in.";
+        return Redirect("/dashboard");
+    }
+
 
      [HttpPost]
     [Route("home/consult")]

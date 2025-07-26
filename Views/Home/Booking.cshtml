@@ -1,3 +1,4 @@
+@model IEnumerable<wennovation_hub.Models.BookingRates>
 @{
     ViewData["Title"] = "Bookings";
 }
@@ -50,25 +51,23 @@
         <label for="spaceType"><i class="fas fa-couch"></i> Space Type</label>
         <select id="spaceType" name="spaceType" required>
           <option value="">Select Type </option>
-          <option value="Single Desk">Single Desk</option>
-        <option value="Private Office">Private Office</option>
-        <option value="Training Space">Training Space</option>
-        <option value="Hot desk">Hot desk</option>
-        <option value="Joint desk">Joint desk</option>
+           @foreach(var space in Model){
+            <option value="@space.SpaceName">@space.Location - @space.SpaceName</option>
+          }
         </select>
         
         @* <div class="select-arrow"><i class="fas fa-chevron-down"></i></div> *@
       </div>
 
       <!-- Pricing Display -->
-      <div class="price-display">
+      @* <div class="price-display">
         <div class="price-tag">
           <span class="price-label">Estimated Cost:</span>
           <span class="price-amount">₦0</span>
           <span class="price-duration">/day</span>
         </div>
         <div class="price-note">Prices shown are for 9AM-5PM access</div>
-      </div>
+      </div> *@
 
       <!-- Date/Time Selection -->
       <div class="form-row">
@@ -78,7 +77,7 @@
         </div>
         <div class="form-group">
           <label for="duration"><i class="far fa-clock"></i> Duration</label>
-          <input type="number" id="duration" name="duration" required>
+          <input type="text" id="duration" name="duration" placeholder="eg: 3 hours" required>
         </div>
       </div>
 
