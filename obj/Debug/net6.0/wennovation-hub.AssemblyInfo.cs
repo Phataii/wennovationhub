@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("wennovation-hub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21b50ea9ae4a770e1c4a87781ad434ce863d94f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("wennovation-hub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("wennovation-hub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,5 +1,7 @@
 is_global = true
 build_property.TargetFramework = net6.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v6.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
@@ -9,101 +11,105 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = wennovation_hub
 build_property.RootNamespace = wennovation_hub
-build_property.ProjectDir = /Users/home/Documents/archive/wennovation-hub/
+build_property.ProjectDir = C:\Users\phata\Documents\archive\work\wennovationhub\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/home/Documents/archive/wennovation-hub
+build_property.MSBuildProjectDirectory = C:\Users\phata\Documents\archive\work\wennovationhub
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 6.0
+build_property.EnableCodeStyleSeverity = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Admins.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BZG1pbnMuY3NodG1s
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Admins.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Booking.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Cb29raW5nLmNzaHRtbA==
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Booking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCb29raW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Consult.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db25zdWx0LmNzaHRtbA==
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Consult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb25zdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Contact.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db250YWN0LmNzaHRtbA==
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Dashboard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EYXNoYm9hcmQuY3NodG1s
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/ErrorPage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FcnJvclBhZ2UuY3NodG1s
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/ErrorPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvclBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Gallery.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9HYWxsZXJ5LmNzaHRtbA==
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Gallery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHYWxsZXJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Impact.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbXBhY3QuY3NodG1s
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Impact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbXBhY3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Mb2dpbi5jc2h0bWw=
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/OurWork.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9PdXJXb3JrLmNzaHRtbA==
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/OurWork.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPdXJXb3JrLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9SZWdpc3Rlci5jc2h0bWw=
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Services.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TZXJ2aWNlcy5jc2h0bWw=
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Services.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXJ2aWNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Success.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TdWNjZXNzLmNzaHRtbA==
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Summary.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TdW1tYXJ5LmNzaHRtbA==
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Summary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdW1tYXJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Team.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9UZWFtLmNzaHRtbA==
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Team.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZWFtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Home/Wennovator.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9XZW5ub3ZhdG9yLmNzaHRtbA==
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Home/Wennovator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXZW5ub3ZhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/home/Documents/archive/wennovation-hub/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-0z6okr6gzx
+[C:/Users/phata/Documents/archive/work/wennovationhub/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-cm2horfngr

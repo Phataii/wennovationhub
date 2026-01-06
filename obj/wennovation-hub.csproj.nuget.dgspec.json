@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/home/Documents/archive/wennovation-hub/wennovation-hub.csproj": {}
+    "C:\\Users\\phata\\Documents\\archive\\work\\wennovationhub\\wennovation-hub.csproj": {}
   },
   "projects": {
-    "/Users/home/Documents/archive/wennovation-hub/wennovation-hub.csproj": {
+    "C:\\Users\\phata\\Documents\\archive\\work\\wennovationhub\\wennovation-hub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/home/Documents/archive/wennovation-hub/wennovation-hub.csproj",
+        "projectUniqueName": "C:\\Users\\phata\\Documents\\archive\\work\\wennovationhub\\wennovation-hub.csproj",
         "projectName": "wennovation-hub",
-        "projectPath": "/Users/home/Documents/archive/wennovation-hub/wennovation-hub.csproj",
-        "packagesPath": "/Users/home/.nuget/packages/",
-        "outputPath": "/Users/home/Documents/archive/wennovation-hub/obj/",
+        "projectPath": "C:\\Users\\phata\\Documents\\archive\\work\\wennovationhub\\wennovation-hub.csproj",
+        "packagesPath": "C:\\Users\\phata\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\phata\\Documents\\archive\\work\\wennovationhub\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/home/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\phata\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -33,7 +32,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -105,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
