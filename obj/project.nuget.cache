@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kuzirawI7hA=",
+  "dgSpecHash": "Mswvbu9Rohg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\phata\\Documents\\archive\\work\\wennovationhub\\wennovation-hub.csproj",
+  "projectFilePath": "C:\\Users\\phata\\Documents\\archive\\work\\wennovation-hub\\wennovationhub\\wennovation-hub.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\phata\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\phata\\.nuget\\packages\\dotnetenv\\3.1.1\\dotnetenv.3.1.1.nupkg.sha512",
@@ -126,9 +126,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'System.IdentityModel.Tokens.Jwt' 6.10.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
-      "projectPath": "C:\\Users\\phata\\Documents\\archive\\work\\wennovationhub\\wennovation-hub.csproj",
+      "projectPath": "C:\\Users\\phata\\Documents\\archive\\work\\wennovation-hub\\wennovationhub\\wennovation-hub.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\phata\\Documents\\archive\\work\\wennovationhub\\wennovation-hub.csproj",
+      "filePath": "C:\\Users\\phata\\Documents\\archive\\work\\wennovation-hub\\wennovationhub\\wennovation-hub.csproj",
       "libraryId": "System.IdentityModel.Tokens.Jwt",
       "targetGraphs": [
         "net6.0"

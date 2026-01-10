@@ -6306,11 +6306,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\phata\\Documents\\archive\\work\\wennovationhub\\wennovation-hub.csproj",
+      "projectUniqueName": "C:\\Users\\phata\\Documents\\archive\\work\\wennovation-hub\\wennovationhub\\wennovation-hub.csproj",
       "projectName": "wennovation-hub",
-      "projectPath": "C:\\Users\\phata\\Documents\\archive\\work\\wennovationhub\\wennovation-hub.csproj",
+      "projectPath": "C:\\Users\\phata\\Documents\\archive\\work\\wennovation-hub\\wennovationhub\\wennovation-hub.csproj",
       "packagesPath": "C:\\Users\\phata\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\phata\\Documents\\archive\\work\\wennovationhub\\obj\\",
+      "outputPath": "C:\\Users\\phata\\Documents\\archive\\work\\wennovation-hub\\wennovationhub\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\phata\\AppData\\Roaming\\NuGet\\NuGet.Config"
